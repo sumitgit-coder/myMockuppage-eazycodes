@@ -1,0 +1,32 @@
+        .box {
+            cursor: pointer;
+            margin-top: 5px;
+            margin-left: -10px;
+            left: 10px;
+            transform: translate(-50%, -50%);
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            animation: anim 7s infinite linear;
+        }
+        
+        @keyframes anim {
+            0% {
+                box-shadow: 0 0 0 0px rgba(255, 98, 0, 0.2);
+            }
+            10% {
+                box-shadow: 0 0 0 20px rgba(255, 98, 0, 0.2);
+            }
+            20% {
+                box-shadow: 0 0 0 20px rgba(255, 98, 0, 0.2), 0 0 0 40px rgba(255, 98, 0, 0.2);
+            }
+            30% {
+                box-shadow: 0 0 0 10px rgba(255, 98, 0, 0.2), 0 0 0 50px rgba(255, 98, 0, 0.2), 0 0 0 30px rgba(255, 98, 0, 0.2);
+            }
+            40% {
+                box-shadow: 0 0 0 0px rgba(255, 98, 0, 0.2), 0 0 0 40px rgba(255, 98, 0, 0.2), 0 0 0 60px rgba(255, 98, 0, 0.2), 0 0 0 80px rgba(255, 98, 0, 0 0.2);
+            }
+            50% {
+                box-shadow: 0 0 0 20px rgba(255, 98, 0, 0.2), 0 0 0 40px rgba(255, 98, 0, 0.2), 0 0 0 60px rgba(255, 98, 0, 0.2), 0 0 0 90px rgba(255, 98, 0, 0.2), 0 0 0 120px rgba(255, 98, 0, 0.2);
+            }
+        }

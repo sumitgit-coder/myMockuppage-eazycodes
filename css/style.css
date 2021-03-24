@@ -1,0 +1,122 @@
+                            @import 'utilities.css';
+                             :root {
+                                --primary: #3DCFD3;
+                                --dark: #161616;
+                                --pure: #FFFFFF;
+                                --ternary: #898989;
+                                --light: #F2F2F2;
+                                --secondary: #070606;
+                                --purple: #8000ff
+                            }
+                            
+                            body {
+                                /* height: 8000px; */
+                                /* font-family: 'Poppins'; */
+                                font-family: 'Flamenco', cursive;
+                                font-size: 20px;
+                            }
+                            
+                            html {
+                                scroll-behavior: smooth;
+                            }
+                            
+                            * {
+                                margin: 0;
+                                padding: 0;
+                                box-sizing: border-box;
+                                -webkit-font-smothing: antialiased;
+                            }
+                            /* nav section */
+                            
+                            #status {
+                                width: 90%;
+                                max-width: 500px;
+                                text-align: center;
+                                padding: 10px;
+                                margin: 0 auto;
+                                border-radius: 8px;
+                            }
+                            
+                            #status.success {
+                                background-color: rgb(211, 250, 153);
+                                animation: status 4s ease forwards;
+                            }
+                            
+                            #status.error {
+                                background-color: rgb(250, 129, 92);
+                                color: white;
+                                animation: status 4s ease forwards;
+                            }
+                            
+                            @keyframes status {
+                                0% {
+                                    opacity: 1;
+                                    pointer-events: all;
+                                }
+                                90% {
+                                    opacity: 1;
+                                    pointer-events: all;
+                                }
+                                100% {
+                                    opacity: 0;
+                                    pointer-events: none;
+                                }
+                            }
+                            /* About section */
+                            
+                            section {
+                                padding: 6rem 0;
+                            }
+                            
+                            section.about .about-me-img {
+                                height: 450px;
+                                width: 350px;
+                            }
+                            
+                            section.about h1 {
+                                margin-bottom: 1rem;
+                                font-size: 1.6rem;
+                                font-weight: 400;
+                            }
+                            
+                            section.about h1 span {
+                                color: var(--primary);
+                            }
+                            
+                            section.about h3 {
+                                font-size: 1rem;
+                                margin-bottom: 1rem;
+                                font-weight: 400;
+                            }
+                            
+                            section.about p {
+                                /* font-family: 'Lato'; */
+                                font-family: 'Flamenco', cursive;
+                                color: var(--ternary);
+                            }
+                            
+                            section.about .social {
+                                display: flex;
+                            }
+                            
+                            @media (max-width:1024px) {
+                                section.about .about-me-img {
+                                    height: 360px;
+                                }
+                            }
+                            
+                            @media (max-width:576px) {
+                                .about-inner-wrap {
+                                    flex-direction: column;
+                                }
+                                .about .right {
+                                    text-align: center;
+                                    margin-top: 2rem;
+                                }
+                                .about .right .social {
+                                    justify-content: center;
+                                }
+                                section {
+                                    padding: 3rem 0;
+                                }
+                            }
